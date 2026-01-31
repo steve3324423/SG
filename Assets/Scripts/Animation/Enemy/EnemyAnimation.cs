@@ -48,24 +48,16 @@ namespace SightMaster.Scripts.Animation.Enemy
 
         private void OnEnable()
         {
-            if (_enemyAI)
-            {
-                _enemyAI.ReachedShelter += OnReachedShelter;
-                _depletion.Scared += OnScared;
-            }
-
+            _enemyAI.ReachedShelter += OnReachedShelter;
+            _depletion.Scared += OnScared;
             _depletion.Depleted += OnDepleted;
             _enemyHealth.Dead += OnDead;
         }
 
         private void OnDisable()
         {
-            if (_enemyAI)
-            {
-                _enemyAI.ReachedShelter -= OnReachedShelter;
-                _depletion.Scared -= OnScared;
-            }
-
+            _enemyAI.ReachedShelter -= OnReachedShelter;
+            _depletion.Scared -= OnScared;
             _depletion.Depleted -= OnDepleted;
             _enemyHealth.Dead -= OnDead;
         }

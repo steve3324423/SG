@@ -1,5 +1,4 @@
 using SightMaster.Scripts.Weapon;
-using SightMaster.Scripts.Weapon.AimHandler;
 using UI_Inputs;
 using UnityEngine;
 using Zenject;

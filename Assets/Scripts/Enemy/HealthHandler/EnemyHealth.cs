@@ -1,4 +1,3 @@
-using System;
 using SightMaster.Scripts.DamageObject;
 using UnityEngine;
 
@@ -7,24 +6,25 @@ namespace SightMaster.Scripts.Enemy.HealthHandler
     public class EnemyHealth : HealthSystem
     {
         [SerializeField] private float _timeForDead = 1.7f;
-        [SerializeField] private HeadEnemy head;
+
+        private HeadEnemy _head;
 
         protected override void Awake()
         {
             base.Awake();
-            head = GetComponentInChildren<HeadEnemy>();
+            _head = GetComponentInChildren<HeadEnemy>();
         }
 
         private void OnEnable()
         {
-            if (head != null)
-                head.Hited += OnHited;
+            if (_head != null)
+                _head.Hited += OnHited;
         }
 
         private void OnDisable()
         {
-            if (head != null)
-                head.Hited -= OnHited;
+            if (_head != null)
+                _head.Hited -= OnHited;
         }
 
         protected override void Die()

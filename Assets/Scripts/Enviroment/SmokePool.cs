@@ -25,7 +25,15 @@ namespace SightMaster.Scripts.Enviroment
 
         private void Awake()
         {
-            _pool = new ObjectPool<ParticleSystem>(CreateItem, ActionSmokeFromPool, ReleaseParticleFromPool, DestroyActionFromPool, false, _minSizePool, _maxSizePool);
+            _pool = new ObjectPool<ParticleSystem>(
+                CreateItem, 
+                ActionSmokeFromPool, 
+                ReleaseParticleFromPool, 
+                DestroyActionFromPool, 
+                false, 
+                _minSizePool, 
+                _maxSizePool);
+
             _waitForSeconds = new WaitForSeconds(_timeForCoroutine);
         }
 

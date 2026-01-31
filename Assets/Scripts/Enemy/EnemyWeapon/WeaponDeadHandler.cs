@@ -2,7 +2,7 @@ using System;
 using SightMaster.Scripts.Enemy.HealthHandler;
 using UnityEngine;
 
-namespace SightMaster.Scripts.Enemy.EnemyWeapon
+namespace SightMaster.Scripts.Enemy.WeaponEnemy
 {
     [RequireComponent(typeof(Rigidbody))]
     public class WeaponDeadHandler : MonoBehaviour

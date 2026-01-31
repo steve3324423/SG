@@ -14,7 +14,14 @@ namespace SightMaster.Scripts.SpawnerObjects
 
         private void Awake()
         {
-            Pool = new ObjectPool<T>(Create, OnTakeFromPool, OnReturnedToPool, OnDestroyPoolObject, _collectionChecks, _defaultCapacity, _maxCapacity);
+            Pool = new ObjectPool<T>(
+                Create, 
+                OnTakeFromPool, 
+                OnReturnedToPool, 
+                OnDestroyPoolObject, 
+                _collectionChecks, 
+                _defaultCapacity, 
+                _maxCapacity);
         }
 
         protected abstract T Create();

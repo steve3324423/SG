@@ -1,8 +1,7 @@
+using SightMaster.Scripts.Enemy;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using SightMaster.Scripts.Enemy;
-using SightMaster.Scripts.Player;
 using TMPro;
 using UnityEngine;
 

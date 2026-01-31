@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.Enemy
 {
+    [RequireComponent(typeof(Collider))]
     public class HitBoxSizeMobile : MonoBehaviour
     {
         private float _valueIncrease = 1.35f;

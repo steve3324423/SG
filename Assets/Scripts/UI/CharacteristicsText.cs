@@ -34,7 +34,7 @@ namespace SightMaster.Scripts.UI
         {
             foreach (CharacteriticsWeapon weaponCharacteritics in _weapons)
             {
-                if (weaponCharacteritics.Id == weapon.GetId())
+                if (weaponCharacteritics.Id == weapon.Id)
                 {
                     if (_isDamage)
                         _text.text = $"{weaponCharacteritics.GetDamage()}";

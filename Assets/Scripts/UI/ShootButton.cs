@@ -7,8 +7,9 @@ namespace SightMaster.Scripts.UI
     {
         private float _timeForInvoke = .01f;
 
-        public bool IsClickShoot { get; private set; }
         public event Action<bool> Shooting;
+
+        public bool IsClickShoot { get; private set; }
 
         public void Shoot()
         {

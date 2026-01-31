@@ -1,5 +1,4 @@
 using SightMaster.Scripts.Weapon;
-using SightMaster.Scripts.Weapon.Sound;
 using UnityEngine;
 
 namespace SightMaster.Scripts.Audios
@@ -7,10 +6,9 @@ namespace SightMaster.Scripts.Audios
     [RequireComponent(typeof(AudioSource))]
     public class WeaponSound : MonoBehaviour
     {
-        [SerializeField] private AmmoHandler[] _ammos;
+        [SerializeField] private PlayerWeapon[] _playerWeapons;
 
         private AudioSource _audioSource;
-        private AudioClip _clip;
 
         private void Awake()
         {
@@ -19,22 +17,22 @@ namespace SightMaster.Scripts.Audios
 
         private void OnEnable()
         {
-            foreach (AmmoHandler ammo in _ammos)
+            foreach (PlayerWeapon ammo in _playerWeapons)
                 ammo.Shooted += OnShooted;
         }
 
         private void OnDisable()
         {
-            foreach (AmmoHandler ammo in _ammos)
+            foreach (PlayerWeapon ammo in _playerWeapons)
                 ammo.Shooted -= OnShooted;
         }
 
         private void SetClip()
         {
-            foreach (AmmoHandler ammo in _ammos)
+            foreach (PlayerWeapon ammo in _playerWeapons)
             {
                 if (ammo.gameObject.activeSelf)
-                    _audioSource.clip = ammo.GetComponent<SoundGet>().GetClip();
+                    _audioSource.clip = ammo.GetComponent<AudioSource>().clip;
             }
         }
 

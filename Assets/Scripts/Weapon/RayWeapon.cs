@@ -6,12 +6,13 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.Weapon
 {
+    [RequireComponent(typeof(PlayerWeapon))]
     public class RayWeapon : MonoBehaviour
     {
         [SerializeField] private int _damage = 10;
         [SerializeField] private Camera _camera;
 
-        private AmmoHandler _weaponAmmo;
+        private PlayerWeapon _weaponAmmo;
         private float _positionCameraScreen = .5f;
         private float _defaultPositionValue = 0f;
         private RaycastHit _hit;
@@ -21,7 +22,7 @@ namespace SightMaster.Scripts.Weapon
 
         private void Awake()
         {
-            _weaponAmmo = GetComponent<AmmoHandler>();
+            _weaponAmmo = GetComponent<PlayerWeapon>();
         }
 
         private void OnEnable()

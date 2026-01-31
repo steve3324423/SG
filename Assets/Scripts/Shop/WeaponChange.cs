@@ -11,7 +11,7 @@ namespace SightMaster.Scripts.Shop
 
         public void Selected()
         {
-            int index = _weaponToBuy.GetId() - 1;
+            int index = _weaponToBuy.Id - 1;
             IndexChanged?.Invoke(index);
         }
     }

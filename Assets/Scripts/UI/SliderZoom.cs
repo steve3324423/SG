@@ -1,5 +1,5 @@
 using System;
-using SightMaster.Scripts.UI.Android;
+using SightMaster.Scripts.UI.Mobile;
 using UnityEngine;
 using UnityEngine.UI;
 

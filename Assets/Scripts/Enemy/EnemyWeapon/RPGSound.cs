@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SightMaster.Scripts.Enemy.EnemyWeapon
+namespace SightMaster.Scripts.Enemy.WeaponEnemy
 {
     [RequireComponent(typeof(AudioSource))]
     public class RPGSound : MonoBehaviour

@@ -1,4 +1,4 @@
-using SightMaster.Scripts.Player;
+using SightMaster.Scripts.DamageObject;
 using UnityEngine;
 using UnityEngine.UI;
 

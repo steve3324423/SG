@@ -570,7 +570,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 597532118312015124}
+      addedObject: {fileID: 8946599509293244011}
   m_SourcePrefab: {fileID: 100100000, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
 --- !u!1 &154772421937376847 stripped
 GameObject:
@@ -578,7 +578,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 154134227397096923}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &597532118312015124
+--- !u!114 &8946599509293244011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,11 +587,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 154772421937376847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65fd32bb5825b4b41bc4f8642bae3355, type: 3}
+  m_Script: {fileID: 11500000, guid: f5f01ab8873f5b748857083702a03469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraAim: {fileID: 0}
   _weapon: {fileID: 1252058503063573384}
+  _positionSource: {fileID: 0}
+  _usePositionSource: 1
 --- !u!4 &156708466145512721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4263658433411274, guid: a98b15aa948478849b54661e4d9a317e,
@@ -718,7 +719,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 450044020708499364, guid: 93a162fc463d2d842a8c25e141618684,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6788551247070469908}
+      addedObject: {fileID: 3526351674130437802}
   m_SourcePrefab: {fileID: 100100000, guid: 93a162fc463d2d842a8c25e141618684, type: 3}
 --- !u!4 &5040732335360237472 stripped
 Transform:
@@ -732,7 +733,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4882964994907071322}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6788551247070469908
+--- !u!114 &3526351674130437802
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -741,10 +742,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5043229410397011198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d76389b3940f9f344ab6a9b90e5481d7, type: 3}
+  m_Script: {fileID: 11500000, guid: f5f01ab8873f5b748857083702a03469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _weapon: {fileID: 1252058503063573384}
+  _positionSource: {fileID: 0}
+  _usePositionSource: 0
 --- !u!1001 &8329586698996697140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -881,6 +884,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252058503063573384}
+    - targetCorrespondingSourceObject: {fileID: 110408, guid: e17d5e42512a30b44b6ac8950118c700,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4316367920391876771}
     - targetCorrespondingSourceObject: {fileID: 111948, guid: e17d5e42512a30b44b6ac8950118c700,
         type: 3}
       insertIndex: -1
@@ -968,12 +975,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6722980d5584a3a488ac96754087f376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hiddenPlace: {fileID: 0}
   _playerHealth: {fileID: 0}
   _depletion: {fileID: 5145811677101171223}
   _timeShoot: 5
   _minDamage: 100
   _damage: 100
+--- !u!114 &4316367920391876771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8329586698996803452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0214cbe0c977ef9458d65854827accc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _depletionPlayer: {fileID: 0}
+  _cameraAim: {fileID: 0}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8329586698996809080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 111948, guid: e17d5e42512a30b44b6ac8950118c700,
@@ -1055,6 +1078,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bf9bd60ff03f5439a29f6b95e0c1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  minHealth: 0
+  startingHealth: 100
+  _timeForDead: 1.7
 --- !u!114 &5145811677101171223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,10 +1095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFollowBullet: {fileID: 0}
-  _ammos:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _playerWeapons: []
   _deplectionChance: 0
   _minValue: 0
   _maxValue: 0
@@ -1208,7 +1232,6 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b083b7753425f9c48ae0b375d6568e2f, type: 3}
-  m_Resource: {fileID: 8300000, guid: b083b7753425f9c48ae0b375d6568e2f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

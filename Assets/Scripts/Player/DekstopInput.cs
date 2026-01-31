@@ -1,12 +1,10 @@
-using SightMaster.Scripts.CameraHandlers;
-using SightMaster.Scripts.LevelHandler;
 using SightMaster.Scripts.Setting;
 using UnityEngine;
 using YG;
 
 namespace SightMaster.Scripts.Player
 {
-    public class DekstopInput : InputControl
+    public class DesktopInput : InputControl
     {
         private const string Horizontal = "Horizontal";
         private const string Vertical = "Vertical";
@@ -19,15 +17,12 @@ namespace SightMaster.Scripts.Player
         private float _differenceValue = .001f;
         private float _pitch = 15f;
         private float _yaw = 0f;
-        private Sensitivity _sensitivity;
         private float _targetPitch = 15f;
         private float _targetYaw = 0f;
 
-        public DekstopInput(LevelEnder levelEnder, PlayerHealth playerHealth, Sensitivity sensitivity)
-            : base(levelEnder, playerHealth)
+        public DesktopInput()
         {
             Cursor.lockState = CursorLockMode.Locked;
-            _sensitivity = sensitivity;
             _targetPitch = _pitch;
             _targetYaw = _yaw;
         }
@@ -37,26 +32,18 @@ namespace SightMaster.Scripts.Player
 
         public override Vector3 GetDirection(Transform transformPlayer)
         {
-            if (IsCanGetValue)
-            {
-                float horizontal = Input.GetAxis(Horizontal);
-                float vertical = Input.GetAxis(Vertical);
+            float horizontal = Input.GetAxis(Horizontal);
+            float vertical = Input.GetAxis(Vertical);
 
-                return transformPlayer.right * horizontal + transformPlayer.forward * vertical;
-            }
-
-            return base.GetDirection(transformPlayer);
+            return transformPlayer.right * horizontal + transformPlayer.forward * vertical;
         }
 
         public override Quaternion GetCameraRotation()
         {
-            if (!IsCanGetValue)
-                return SetCameraRotation(_pitch, _yaw);
-
             float mouseX = Input.GetAxis(MouseX);
             float mouseY = Input.GetAxis(MouseY);
 
-            float sensitivity = YG2.saves.sensitivity * _sensitivity.SensitivityValue;
+            float sensitivity = YG2.saves.sensitivity;
 
             _targetYaw += mouseX * sensitivity;
             _targetPitch -= mouseY * sensitivity;

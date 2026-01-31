@@ -1,7 +1,6 @@
-using System;
 using SightMaster.Scripts.HandlerPause;
 using SightMaster.Scripts.LevelHandler;
-using SightMaster.Scripts.Player;
+using System;
 using UnityEngine;
 
 namespace SightMaster.Scripts.UI

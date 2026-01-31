@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.CameraHandlers
 {
+    [RequireComponent(typeof(Camera))]
     public abstract class BaseCameraZoom : MonoBehaviour, ICameraZoom
     {
         [SerializeField] protected float _minFov = 30f;
@@ -17,15 +18,7 @@ namespace SightMaster.Scripts.CameraHandlers
         protected virtual void Awake()
         {
             _camera = GetComponent<Camera>();
-
-            if (Application.isMobilePlatform)
-            {
-                _camera.fieldOfView = _minFov;
-            }
-            else
-            {
-                _camera.fieldOfView = _minFov;
-            }
+            _camera.fieldOfView = _minFov;
         }
 
         protected virtual void OnEnable()

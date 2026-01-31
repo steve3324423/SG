@@ -10,7 +10,7 @@ namespace SightMaster.Scripts.Enemy
     public class DepletionPlayer : MonoBehaviour
     {
         [SerializeField] private CameraFollowBullet _cameraFollowBullet;
-        [SerializeField] private AmmoHandler[] _ammos;
+        [SerializeField] private PlayerWeapon[] _playerWeapons;
         [SerializeField] private int _deplectionChance = 1;
         [SerializeField] private int _minValue = 0;
         [SerializeField] private int _maxValue = 2;
@@ -30,8 +30,8 @@ namespace SightMaster.Scripts.Enemy
 
         private void OnEnable()
         {
-            foreach (AmmoHandler ammo in _ammos)
-                ammo.Shooted += OnShooted;
+            foreach (PlayerWeapon playerWeapon in _playerWeapons)
+                playerWeapon.Shooted += OnShooted;
 
             _cameraFollowBullet.Followed += OnFollowed;
             _enemyHealth.Dead += OnDead;
@@ -39,8 +39,8 @@ namespace SightMaster.Scripts.Enemy
 
         private void OnDisable()
         {
-            foreach (AmmoHandler ammo in _ammos)
-                ammo.Shooted -= OnShooted;
+            foreach (PlayerWeapon playerWeapon in _playerWeapons)
+                playerWeapon.Shooted -= OnShooted;
 
             _cameraFollowBullet.Followed -= OnFollowed;
             _enemyHealth.Dead -= OnDead;

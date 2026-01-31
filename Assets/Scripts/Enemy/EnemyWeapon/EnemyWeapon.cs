@@ -1,11 +1,13 @@
+using SightMaster.Scripts.DamageObject;
+using SightMaster.Scripts.Player;
 using System;
 using System.Collections;
-using SightMaster.Scripts.Player;
 using UnityEngine;
 
-namespace SightMaster.Scripts.Enemy.EnemyWeapon
+namespace SightMaster.Scripts.Enemy.WeaponEnemy
 {
     [RequireComponent(typeof(WeaponDeadHandler))]
+    [RequireComponent(typeof(VisiblePlayer))]
     public class EnemyWeapon : MonoBehaviour
     {
         [SerializeField] private PlayerHealth _playerHealth;
@@ -62,7 +64,7 @@ namespace SightMaster.Scripts.Enemy.EnemyWeapon
         {
             while (enabled)
             {
-                int damage =  UnityEngine.Random.Range(_minDamage, _damage + 1);
+                int damage = UnityEngine.Random.Range(_minDamage, _damage + 1);
                 _playerHealth.TakeDamage(_isPlayerDisappeared == false ? 0 : damage);
                 Shooted?.Invoke();
 

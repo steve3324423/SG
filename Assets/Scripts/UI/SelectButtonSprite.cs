@@ -63,7 +63,7 @@ namespace SightMaster.Scripts.UI
 
         private void OnWeaponChanged(WeaponToBuy weapon)
         {
-            if (weapon.GetId() == _index)
+            if (weapon.Id== _index)
                 SetSprite(_selectedSprite);
             else
                 SetSprite(_defaultSprite);

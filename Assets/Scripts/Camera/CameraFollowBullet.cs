@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.CameraHandlers
 {
-    public class CameraFollowBullet : MonoBehaviour
+    public class CameraFollowBullet : MonoBehaviour, IPauseBlocker
     {
         [SerializeField] private RayWeapon[] _raysWeapon;
         [SerializeField] private BulletSpawn _bulletSpawn;
@@ -19,6 +19,8 @@ namespace SightMaster.Scripts.CameraHandlers
         private Bullet _followingBullet;
 
         public event Action<bool> Followed;
+
+        public bool IsPauseBlocked { get; private set; }
 
         private void OnEnable()
         {
@@ -45,6 +47,7 @@ namespace SightMaster.Scripts.CameraHandlers
             Quaternion originalCameraRotation = transform.rotation;
             Vector3 targetCameraPosition;
 
+            IsPauseBlocked = true;
             float timer = 0;
 
             while (timer < _slowdownLength)
@@ -67,6 +70,7 @@ namespace SightMaster.Scripts.CameraHandlers
 
             transform.position = originalCameraPosition;
             transform.rotation = originalCameraRotation;
+            IsPauseBlocked = false;
         }
 
         private void OnCreated(Bullet bullet)

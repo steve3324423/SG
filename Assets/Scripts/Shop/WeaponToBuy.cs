@@ -7,14 +7,7 @@ namespace SightMaster.Scripts.Shop
         [SerializeField] private int _price;
         [SerializeField] private int _id;
 
-        public int GetId()
-        {
-            return _id;
-        }
-
-        public int GetPrice()
-        {
-            return _price;
-        }
+        public int Id => _id;
+        public int Price => _price;
     }
 }

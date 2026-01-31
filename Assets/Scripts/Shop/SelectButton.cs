@@ -27,7 +27,7 @@ namespace SightMaster.Scripts.Shop
 
         private void OnWeaponChanged(WeaponToBuy weapon)
         {
-            _currentIdWeapon = weapon.GetId();
+            _currentIdWeapon = weapon.Id;
         }
 
         private void OnBuyed(WeaponToBuy weapon)

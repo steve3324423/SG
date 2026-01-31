@@ -12,6 +12,7 @@ namespace SightMaster.Scripts.Player
 
         private CharacterController _controller;
         private IInput _input;
+        private bool _isEnabled = true;
 
         public event Action<bool> Moved;
 
@@ -28,8 +29,15 @@ namespace SightMaster.Scripts.Player
 
         private void Update()
         {
+            if (!_isEnabled || _input == null) return;
+
             _controller.Move(_input.GetDirection(_mainCamera) * _speed * Time.deltaTime);
             Moved?.Invoke(_controller.velocity.magnitude > 0);
+        }
+
+        public void EnableMovement(bool enable)
+        {
+            _isEnabled = enable;
         }
     }
 }

@@ -2592,7 +2592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMPComponent: {fileID: 979033679}
-  uniqueFontTMP: {fileID: 11400000, guid: 2774d4b15b48a16428613ce7352f1b05, type: 2}
+  uniqueFontTMP: {fileID: 11400000, guid: 7b9a3f648cb40e648b4503da1e438638, type: 2}
   textLComponent: {fileID: 0}
   info:
     domainAutoLocalization: com
@@ -2774,7 +2774,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041D\u0430\u0437\u0430\u0434"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a669619d1daf1394dba2650c1dc480ea, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b9a3f648cb40e648b4503da1e438638, type: 2}
   m_sharedMaterial: {fileID: -5499520142469937844, guid: a669619d1daf1394dba2650c1dc480ea,
     type: 2}
   m_fontSharedMaterials: []
@@ -2839,7 +2839,7 @@ MonoBehaviour:
   m_margin: {x: -30.529175, y: 0, z: -30.434326, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &979033680
@@ -7314,7 +7314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMPComponent: {fileID: 2010217108}
-  uniqueFontTMP: {fileID: 11400000, guid: 8a0143f4e313ff54b8aef4e87ceac4d5, type: 2}
+  uniqueFontTMP: {fileID: 11400000, guid: 7b9a3f648cb40e648b4503da1e438638, type: 2}
   textLComponent: {fileID: 0}
   info:
     domainAutoLocalization: com
@@ -7496,7 +7496,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041B\u0438\u0434\u0435\u0440\u0431\u043E\u0440\u0434"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a669619d1daf1394dba2650c1dc480ea, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b9a3f648cb40e648b4503da1e438638, type: 2}
   m_sharedMaterial: {fileID: -5499520142469937844, guid: a669619d1daf1394dba2650c1dc480ea,
     type: 2}
   m_fontSharedMaterials: []
@@ -7561,7 +7561,7 @@ MonoBehaviour:
   m_margin: {x: -47.132996, y: 0, z: -61.152954, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2010217109
@@ -8053,7 +8053,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: a669619d1daf1394dba2650c1dc480ea,
+      objectReference: {fileID: 11400000, guid: 7b9a3f648cb40e648b4503da1e438638,
         type: 2}
     - target: {fileID: 613512722554456650, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
@@ -8064,7 +8064,7 @@ PrefabInstance:
     - target: {fileID: 613512722554456650, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 846247447617652497, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
@@ -8290,7 +8290,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: a669619d1daf1394dba2650c1dc480ea,
+      objectReference: {fileID: 11400000, guid: 7b9a3f648cb40e648b4503da1e438638,
         type: 2}
     - target: {fileID: 6161639029508587029, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
@@ -8301,7 +8301,7 @@ PrefabInstance:
     - target: {fileID: 6161639029508587029, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6514635914593320792, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
@@ -8322,7 +8322,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: a669619d1daf1394dba2650c1dc480ea,
+      objectReference: {fileID: 11400000, guid: 7b9a3f648cb40e648b4503da1e438638,
         type: 2}
     - target: {fileID: 6514635914593320792, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
@@ -8333,7 +8333,7 @@ PrefabInstance:
     - target: {fileID: 6514635914593320792, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7728235818348750146, guid: 548032a794fb0b2489f3423735b991b8,
         type: 3}

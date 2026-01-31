@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 namespace SightMaster.Scripts.UI
 {
+    [RequireComponent(typeof(Slider))]
     public class HealthBarEnemy : MonoBehaviour
     {
         [SerializeField] private EnemyHealth _health;

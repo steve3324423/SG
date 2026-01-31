@@ -14,9 +14,9 @@ namespace SightMaster.Scripts.Shop
 
         public void Buy()
         {
-            YG2.saves.money -= _currentWeapon.GetPrice();
-            YG2.saves.idWeaponBuy.Add(_currentWeapon.GetId());
-            YG2.saves.idWeaponSelect = _currentWeapon.GetId();
+            YG2.saves.money -= _currentWeapon.Price;
+            YG2.saves.idWeaponBuy.Add(_currentWeapon.Id);
+            YG2.saves.idWeaponSelect = _currentWeapon.Id;
 
             YG2.SaveProgress();
             Buyed?.Invoke(_currentWeapon);

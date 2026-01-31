@@ -1,8 +1,7 @@
 using SightMaster.Scripts.Setting;
 using SightMaster.Scripts.UI;
-using SightMaster.Scripts.UI.Android;
+using SightMaster.Scripts.UI.Mobile;
 using SightMaster.Scripts.Weapon;
-using SightMaster.Scripts.Weapon.AimHandler;
 using UnityEngine;
 using YG;
 using Zenject;
@@ -37,7 +36,6 @@ namespace SightMaster.Scripts.Player
             _inputWeapon = inputWeapon;
             _inputWeapon.Aiming += OnAimed;
         }
-
 
         private void OnEnable()
         {

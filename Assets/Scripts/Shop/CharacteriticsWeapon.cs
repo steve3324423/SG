@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.Shop
 {
+    [RequireComponent(typeof(WeaponToBuy))]
     public class CharacteriticsWeapon : MonoBehaviour
     {
         [SerializeField] private int _damage;
@@ -15,7 +16,7 @@ namespace SightMaster.Scripts.Shop
         private void Awake()
         {
             _weapon = GetComponent<WeaponToBuy>();
-            Id = _weapon.GetId();
+            Id = _weapon.Id;
         }
 
         public int GetDamage()

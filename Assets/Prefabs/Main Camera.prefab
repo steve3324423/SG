@@ -11,10 +11,8 @@ GameObject:
   - component: {fileID: 2041029256251568814}
   - component: {fileID: 20559367075549818}
   - component: {fileID: 3316047024914229471}
-  - component: {fileID: 8814925696074169989}
   - component: {fileID: 1892214052121328416}
-  - component: {fileID: 8284912138537755133}
-  - component: {fileID: 4182201165580103710}
+  - component: {fileID: 8209135541413508559}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -96,25 +94,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197631907862637219}
   m_Enabled: 1
---- !u!114 &8814925696074169989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197631907862637219}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39ea8613c8fb1f447979eb73bff545b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 0}
-  _height: 3
-  _rearDistance: 3
-  _positionFollowSpeed: 3
-  _rotationFollowSpeed: 7
-  _playerHealth: {fileID: 0}
-  _levelEnder: {fileID: 0}
 --- !u!114 &1892214052121328416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +110,7 @@ MonoBehaviour:
   - {fileID: 0}
   _bulletSpawn: {fileID: 0}
   _cameraSpeed: 1
---- !u!114 &8284912138537755133
+--- !u!114 &8209135541413508559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,33 +119,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 197631907862637219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e61e2a3b5f5987439187091d43d3bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cameraFollowBullet: {fileID: 1892214052121328416}
-  _levelEnder: {fileID: 0}
-  _aim: {fileID: 0}
---- !u!114 &4182201165580103710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197631907862637219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c116c2767cca14a875a3db0bb7e075, type: 3}
+  m_Script: {fileID: 11500000, guid: f778966187156f94c93b97136b62e4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
-  _cameraTransform: {fileID: 0}
+  _cameraTransform: {fileID: 2041029256251568814}
+  _mainCamera: {fileID: 20559367075549818}
   _thirdPersonDistance: 3
   _cameraCollisionRadius: 0.2
   _cameraCollisionMask:
     serializedVersion: 2
     m_Bits: 0
   _firstPersonOffset: {x: 0, y: 1.7, z: 0}
-  _isFirstPerson: 0
-  _pauseHandler: {fileID: 0}
-  _levelEnder: {fileID: 0}
-  _playerHealth: {fileID: 0}

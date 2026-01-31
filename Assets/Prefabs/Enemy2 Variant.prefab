@@ -688,7 +688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6722980d5584a3a488ac96754087f376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hiddenPlace: {fileID: 5746117160786363843}
   _playerHealth: {fileID: 0}
   _depletion: {fileID: 127617225779388025}
   _timeShoot: 1
@@ -705,7 +704,6 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2b025b8640d4a604ebc6fea35e0c3bcf, type: 3}
-  m_Resource: {fileID: 8300000, guid: 2b025b8640d4a604ebc6fea35e0c3bcf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.555
   m_Pitch: 1
@@ -882,8 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFollowBullet: {fileID: 0}
-  _ammos:
-  - {fileID: 0}
+  _playerWeapons: []
   _deplectionChance: 1
   _minValue: 0
   _maxValue: 2
@@ -899,6 +896,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bf9bd60ff03f5439a29f6b95e0c1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  minHealth: 0
+  startingHealth: 100
+  _timeForDead: 1.7
 --- !u!114 &2950673106369579071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,7 +1111,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 8eaaa4f553116f44b8459bc24201c514,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7018251965988890438}
+      addedObject: {fileID: 4495959115657826848}
   m_SourcePrefab: {fileID: 100100000, guid: 8eaaa4f553116f44b8459bc24201c514, type: 3}
 --- !u!4 &8125979017184754138 stripped
 Transform:
@@ -1124,7 +1125,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8125979017184879450}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7018251965988890438
+--- !u!114 &4495959115657826848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1133,7 +1134,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8125979017184847354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c360d58eddb50c418379c2bbfe4c30d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5f01ab8873f5b748857083702a03469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _weapon: {fileID: 8077172546856296959}
+  _positionSource: {fileID: 0}
+  _usePositionSource: 0

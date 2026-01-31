@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aisar\\Desktop\\SGGit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|c:\\users\\aisar\\desktop\\sggit\\assets\\scripts\\enemy\\enemyweapon\\weaponeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyweapon\\weaponeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|c:\\users\\aisar\\desktop\\sggit\\assets\\scripts\\player\\inputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\inputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|C:\\Users\\Aisar\\Desktop\\SGGit\\assets\\scripts\\player\\playercamerastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercamerastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|C:\\Users\\Aisar\\Desktop\\SGGit\\assets\\scripts\\player\\playercamerastatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercamerastatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|C:\\Users\\Aisar\\Desktop\\SGGit\\assets\\scripts\\camera\\aimcamerastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\aimcamerastate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|c:\\users\\aisar\\desktop\\sggit\\assets\\scripts\\camera\\aimcamerastatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FCE1CD2-6A4D-3ECF-F486-7216A1A482F4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\aimcamerastatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeaponEffect.cs",
+              "DocumentMoniker": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Enemy\\EnemyWeapon\\WeaponEffect.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyWeapon\\WeaponEffect.cs",
+              "ToolTip": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Enemy\\EnemyWeapon\\WeaponEffect.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyWeapon\\WeaponEffect.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T17:06:42.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Player\\InputHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\InputHandler.cs",
+              "ToolTip": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Player\\InputHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\InputHandler.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwCkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T15:59:30.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AimCameraStateHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Camera\\AimCameraStateHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\AimCameraStateHandler.cs",
+              "ToolTip": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Camera\\AimCameraStateHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\AimCameraStateHandler.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwC0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T14:49:21.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerCameraState.cs",
+              "DocumentMoniker": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Player\\PlayerCameraState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerCameraState.cs",
+              "ToolTip": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Player\\PlayerCameraState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerCameraState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T14:40:54.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AimCameraState.cs",
+              "DocumentMoniker": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Camera\\AimCameraState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\AimCameraState.cs",
+              "ToolTip": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Camera\\AimCameraState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\AimCameraState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T14:39:10.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerCameraStateHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Player\\PlayerCameraStateHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerCameraStateHandler.cs",
+              "ToolTip": "C:\\Users\\Aisar\\Desktop\\SGGit\\Assets\\Scripts\\Player\\PlayerCameraStateHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerCameraStateHandler.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAmwCoAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T14:01:18.625Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

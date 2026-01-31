@@ -1,6 +1,5 @@
 using SightMaster.Scripts.CameraHandlers;
 using SightMaster.Scripts.Weapon;
-using SightMaster.Scripts.Weapon.AimHandler;
 using System.Collections;
 using UnityEngine;
 using Zenject;
@@ -44,6 +43,7 @@ public class CameraZoom : BaseCameraZoom
         {
             _inputWeapon.Aiming -= OnAimed;
         }
+
         StopZoomCoroutine();
     }
 

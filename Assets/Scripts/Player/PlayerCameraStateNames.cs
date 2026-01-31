@@ -1,4 +1,3 @@
-
 namespace SightMaster.Scripts.Player
 {
     public static class PlayerCameraStateNames

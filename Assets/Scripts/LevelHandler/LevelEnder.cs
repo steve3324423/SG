@@ -5,7 +5,7 @@ using YG;
 
 namespace SightMaster.Scripts.LevelHandler
 {
-    public class LevelEnder : MonoBehaviour
+    public class LevelEnder : MonoBehaviour, IPauseBlocker
     {
         [SerializeField] private int _initialEnemyCount;
         [SerializeField] private DeadEnemyCount _deadCount;
@@ -14,6 +14,8 @@ namespace SightMaster.Scripts.LevelHandler
         private float _timeForInvoke = 1.3f;
 
         public event Action Wined;
+
+        public bool IsPauseBlocked { get; private set; }
 
         private void OnEnable()
         {
@@ -35,6 +37,7 @@ namespace SightMaster.Scripts.LevelHandler
         {
             YG2.saves.levels.Add(_indexLevel + 1);
             YG2.SaveProgress();
+            IsPauseBlocked = true;
             Wined?.Invoke();
         }
     }

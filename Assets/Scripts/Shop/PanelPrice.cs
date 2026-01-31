@@ -23,7 +23,7 @@ namespace SightMaster.Scripts.Shop
 
         private void OnBuyed(WeaponToBuy weapon)
         {
-            if (weapon.GetId() == _index)
+            if (weapon.Id == _index)
                 Destroy(gameObject);
         }
 

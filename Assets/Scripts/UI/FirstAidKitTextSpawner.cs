@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.UI
 {
+    [RequireComponent(typeof(TextMeshProUGUI))]
     public class FirstAidKitTextSpawner : MonoBehaviour
     {
         [SerializeField] private FirstAidKit.FirstAidKit[] _firstAidKits;

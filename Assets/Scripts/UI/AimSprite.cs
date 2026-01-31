@@ -1,6 +1,5 @@
 using SightMaster.Scripts.CameraHandlers;
 using SightMaster.Scripts.Weapon;
-using SightMaster.Scripts.Weapon.AimHandler;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -11,7 +10,8 @@ namespace SightMaster.Scripts.UI
     public class AimSprite : MonoBehaviour
     {
         [SerializeField] private CameraFollowBullet _cameraFollowBullet;
-        [SerializeField] private SpriteGet[] _spriteGet;
+        [SerializeField] private PlayerWeapon[] _playerWeapons;
+        [SerializeField] private Sprite[] _sprites;
 
         private IInputWeapon _inputWeapon;
         private bool _isFollowed;
@@ -48,10 +48,10 @@ namespace SightMaster.Scripts.UI
 
         private void SetTexture()
         {
-            foreach (SpriteGet sprite in _spriteGet)
+            for (int i = 0; i < _playerWeapons.Length; i++)
             {
-                if (sprite.gameObject.activeSelf)
-                    _texture = sprite.GetTexture();
+                if (_playerWeapons[i].gameObject.activeSelf)
+                    _texture = _sprites[i].texture;
             }
 
             _rawImage.texture = _texture;

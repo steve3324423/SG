@@ -41,7 +41,7 @@ namespace SightMaster.Scripts.UI
 
             foreach (int id in YandexGame.savesData.idWeaponBuy)
             {
-                if (id == weapon.GetId())
+                if (id == weapon.Id)
                     _text.enabled = false;
             }
         }

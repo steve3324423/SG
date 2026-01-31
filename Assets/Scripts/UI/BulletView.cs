@@ -7,7 +7,7 @@ namespace SightMaster.Scripts.UI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class BulletView : MonoBehaviour
     {
-        [SerializeField] private AmmoHandler[] _weaponAmmo;
+        [SerializeField] private PlayerWeapon[] _weaponAmmo;
 
         private TextMeshProUGUI _text;
 
@@ -18,13 +18,13 @@ namespace SightMaster.Scripts.UI
 
         private void OnEnable()
         {
-            foreach (AmmoHandler weapon in _weaponAmmo)
+            foreach (PlayerWeapon weapon in _weaponAmmo)
                 weapon.BulletChanged += OnBulletChanged;
         }
 
         private void OnDisable()
         {
-            foreach (AmmoHandler weapon in _weaponAmmo)
+            foreach (PlayerWeapon weapon in _weaponAmmo)
                 weapon.BulletChanged -= OnBulletChanged;
         }
 

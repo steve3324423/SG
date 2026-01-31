@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using YG;
@@ -35,28 +37,20 @@ namespace SightMaster.Scripts.Shop
 
         private void OnWeaponChanged(WeaponToBuy weapon)
         {
-            foreach (int id in YG2.saves.idWeaponBuy)
-            {
-                if (_index == id)
-                    _text.enabled = true;
-            }
-
-            if (weapon.GetId() == _index)
-                SetLanguageText(true, false);
-            else
-                SetLanguageText(false, true);
+            _text.enabled = YG2.saves.idWeaponBuy.Any(id => id == _index);
+            SetLanguageText(weapon.Id == _index);
         }
 
         private void OnBuyed(WeaponToBuy weapon)
         {
-            if (weapon.GetId() == _index)
+            if (weapon.Id == _index)
                 OnWeaponChanged(weapon);
         }
 
-        private void SetLanguageText(bool isSelected, bool isSelect)
+        private void SetLanguageText(bool isSelected)
         {
             _selectedLanguageText.enabled = isSelected;
-            _selectLanguageText.enabled = isSelect;
+            _selectLanguageText.enabled = !isSelected;
         }
     }
 }

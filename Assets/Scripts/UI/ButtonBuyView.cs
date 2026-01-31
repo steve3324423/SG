@@ -34,14 +34,14 @@ namespace SightMaster.Scripts.UI
             {
                 SetViewElements(true, true);
 
-                if (weapon.GetId() == id)
+                if (weapon.Id == id)
                 {
                     SetViewElements(false, false);
                     break;
                 }
             }
 
-            Button.interactable = weapon.GetPrice() <= YandexGame.savesData.money;
+            Button.interactable = weapon.Price <= YandexGame.savesData.money;
         }
 
         private void OnBuyed(WeaponToBuy weapon)

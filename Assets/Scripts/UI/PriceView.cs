@@ -5,6 +5,7 @@ using YG;
 
 namespace SightMaster.Scripts.UI
 {
+    [RequireComponent(typeof(TextMeshProUGUI))]
     public class PriceView : MonoBehaviour
     {
         [SerializeField] private WeaponToBuy _weapon;
@@ -30,17 +31,17 @@ namespace SightMaster.Scripts.UI
 
         private void OnBuyed(WeaponToBuy weapon)
         {
-            if (weapon.GetId() == _weapon.GetId())
+            if (weapon.Id == _weapon.Id)
                 SetText(string.Empty);
         }
 
         private void SetPrice()
         {
-            SetText($"{_weapon.GetPrice()}$");
+            SetText($"{_weapon.Price}$");
 
             foreach (int id in YandexGame.savesData.idWeaponBuy)
             {
-                if (_weapon.GetId() == id)
+                if (_weapon.Id == id)
                 {
                     SetText(string.Empty);
                     break;

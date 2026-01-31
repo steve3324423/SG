@@ -32,7 +32,7 @@ namespace SightMaster.Scripts.Shop
 
         private void OnWeaponChanged(WeaponToBuy weapon)
         {
-            if (weapon.GetId() == _index)
+            if (weapon.Id == _index)
                 SetTransparency(1);
             else
                 SetTransparency(0);
@@ -40,7 +40,7 @@ namespace SightMaster.Scripts.Shop
 
         private void OnBuyed(WeaponToBuy weapon)
         {
-            if (weapon.GetId() == _index)
+            if (weapon.Id == _index)
                 OnWeaponChanged(weapon);
         }
 

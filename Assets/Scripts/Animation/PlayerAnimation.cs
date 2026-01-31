@@ -1,3 +1,4 @@
+using SightMaster.Scripts.DamageObject;
 using SightMaster.Scripts.FSM;
 using SightMaster.Scripts.LevelHandler;  
 using SightMaster.Scripts.Player;
@@ -5,7 +6,9 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.Animation
 {
+    [RequireComponent(typeof(PlayerHealth))]
     [RequireComponent(typeof(Animator))]
+    [RequireComponent(typeof(Mover))]
     public class PlayerAnimation : MonoBehaviour
     {
         [SerializeField] private LevelEnder _levelEnder;

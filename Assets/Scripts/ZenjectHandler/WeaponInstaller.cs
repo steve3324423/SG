@@ -1,10 +1,10 @@
+using SightMaster.Scripts.DamageObject;
 using SightMaster.Scripts.HandlerPause;
 using SightMaster.Scripts.LevelHandler;
 using SightMaster.Scripts.Player;
 using SightMaster.Scripts.UI;
-using SightMaster.Scripts.UI.Android;
+using SightMaster.Scripts.UI.Mobile;
 using SightMaster.Scripts.Weapon;
-using SightMaster.Scripts.Weapon.AimHandler;
 using UnityEngine;
 using Zenject;
 
@@ -23,7 +23,7 @@ namespace SightMaster.Scripts.ZenjectHandler
         public override void InstallBindings()
         {
             if (Application.isMobilePlatform)
-                Container.Bind<IInputWeapon>().To<MobileInput>().AsSingle();
+                Container.Bind<IInputWeapon>().To<MobileWeaponInput>().AsSingle();
             else
                 Container.Bind<IInputWeapon>().To<DekstopWeapon>().AsSingle();
 

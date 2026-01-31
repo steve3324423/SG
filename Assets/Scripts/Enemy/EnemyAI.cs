@@ -1,4 +1,5 @@
 using System;
+using SightMaster.Scripts.Enemy.WeaponEnemy;
 using SightMaster.Scripts.Enemy.HealthHandler;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,9 +7,10 @@ using UnityEngine.AI;
 namespace SightMaster.Scripts.Enemy
 {
     [RequireComponent(typeof(NavMeshAgent))]
+    [RequireComponent(typeof(EnemyHealth))]
     public class EnemyAI : MonoBehaviour
     {
-        [SerializeField] private EnemyWeapon.EnemyWeapon _enemyWeapon;
+        [SerializeField] private EnemyWeapon _enemyWeapon;
         [SerializeField] private DepletionPlayer _depletion;
         [SerializeField] private Transform[] _targets;
         [SerializeField] private Transform _shelter;

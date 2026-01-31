@@ -41,7 +41,7 @@ namespace SightMaster.Scripts.Player
                 _ray = new Ray(transform.position, directionToPlayer);
 
                 if (Physics.Raycast(_ray, out _hit, Mathf.Infinity, _actualLayerMask))
-                    PlayerDisappeared?.Invoke(_hit.transform.TryGetComponent(out CameraAim camera));
+                    PlayerDisappeared?.Invoke(_hit.transform.TryGetComponent(out CameraShakeHandler camera));
 
                 yield return null;
             }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace SightMaster.Scripts.Player
 {
+    [RequireComponent(typeof(MeshRenderer))]
     public class MeshRendererHandler : MeshHandler
     {
         private MeshRenderer _meshRenderer;
