@@ -1,7 +1,6 @@
 using SightMaster.Scripts.Player;
 using SightMaster.Scripts.Setting;
 using UnityEngine;
-using YG;
 using Zenject;
 
 namespace SightMaster.Scripts.ZenjectHandler

@@ -1,7 +1,5 @@
-using SightMaster.Scripts.DamageObject;
 using SightMaster.Scripts.HandlerPause;
 using SightMaster.Scripts.LevelHandler;
-using SightMaster.Scripts.Player;
 using System.Collections;
 using UnityEngine;
 

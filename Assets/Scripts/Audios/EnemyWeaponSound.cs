@@ -1,6 +1,4 @@
-using SightMaster.Scripts.DamageObject;
 using SightMaster.Scripts.Enemy.WeaponEnemy;
-using SightMaster.Scripts.Player;
 using UnityEngine;
 
 namespace SightMaster.Scripts.Audios

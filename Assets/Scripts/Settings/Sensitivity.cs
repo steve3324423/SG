@@ -20,25 +20,18 @@ namespace SightMaster.Scripts.Setting
         {
             _cameraZoom = GetComponent<BaseCameraZoom>();
 
-            if (_cameraZoom != null)
-                SensitivityValue = CalculateZoomDependentSensitivity(_cameraZoom.CurrentZoom, Application.isMobilePlatform
-                    ? _mobileMultiplier : _defaultPCValue);
+            SensitivityValue = CalculateZoomDependentSensitivity(_cameraZoom.CurrentZoom, Application.isMobilePlatform 
+                ? _mobileMultiplier : _defaultPCValue);
         }
 
         private void OnEnable()
         {
-            if (_cameraZoom != null)
-            {
-                _cameraZoom.ZoomChanged += OnZoomChanged;
-            }
+            _cameraZoom.ZoomChanged += OnZoomChanged;
         }
 
         private void OnDisable()
         {
-            if (_cameraZoom != null)
-            {
-                _cameraZoom.ZoomChanged -= OnZoomChanged;
-            }
+            _cameraZoom.ZoomChanged -= OnZoomChanged;
         }
 
         private void OnZoomChanged(float zoomValue)

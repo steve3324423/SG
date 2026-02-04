@@ -1,5 +1,3 @@
-using SightMaster.Scripts.DamageObject;
-using SightMaster.Scripts.Player;
 using TMPro;
 using UnityEngine;
 

@@ -1,5 +1,4 @@
 using System;
-using SightMaster.Scripts.CameraHandlers;
 using SightMaster.Scripts.DamageObject;
 using SightMaster.Scripts.Enemy.HealthHandler;
 using UnityEngine;
