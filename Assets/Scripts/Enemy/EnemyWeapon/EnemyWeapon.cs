@@ -1,4 +1,3 @@
-using SightMaster.Scripts.DamageObject;
 using SightMaster.Scripts.Player;
 using System;
 using System.Collections;

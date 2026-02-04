@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace SightMaster.Scripts.Enviroment
 {
     public interface IExplosionDamage

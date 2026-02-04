@@ -1,4 +1,3 @@
-using SightMaster.Scripts.Setting;
 using UnityEngine;
 using YG;
 
